@@ -1,5 +1,5 @@
 // console.log("Hello");
 
 self.addEventListener('fetch', function(e){
-    console.log(e.request)
+    console.log(e.request, "Checking second Worker")
 })
