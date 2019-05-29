@@ -1,5 +1,7 @@
-// console.log("Hello");
-
 self.addEventListener('fetch', function(e){
-    console.log(e.request, "Checking second Worker")
+    e.respondWith(
+        new Response("<h1 class='a-winner-is-me'>Hello Service Worker</h1>", {
+            headers: { "Content-Type": "text/html"}
+        })
+    );
 })
